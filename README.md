@@ -1,4 +1,4 @@
-# Generate Table Mappings for AWS DMS Replication tasks using CSV files
+# Generate Table Mappings for AWS DMS Replication tasks using PowerShell
 
 This PowerShell script takes a CSV file having names of schemas and tables to be migrated, and generates the required table mappings to be used when creating AWS Database Migration replication tasks. Creation of DMS Replication instances, DMS endpoints and replication tasks are not addressed by this tool.
 
