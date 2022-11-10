@@ -1,6 +1,6 @@
 # Generate Table Mappings for AWS DMS Replication tasks using CSV files
 
-This is a small PowerShell script that takes an CSV file having names of tables to be migrated, and generates the required table mappings to be used when creating AWS Database Migration Replication tasks. Creation of DMS Replication instances, DMS Endpoints and Replication Tasks is not addressed by this tool.
+This PowerShell script takes a CSV file having names of schemas and tables to be migrated, and generates the required table mappings to be used when creating AWS Database Migration replication tasks. Creation of DMS Replication instances, DMS endpoints and replication tasks are not addressed by this tool.
 
 ### Prerequisites
 
@@ -17,7 +17,7 @@ posh-dms-table-mapping-generator.ps1 --TableListFile [PATH_OF_THE_CSV_FILE] --Ou
 
 | Name | Description | Required|
 | :---- |:----------- |:--------|
-|TableListFile|Location of the CSV file containing the schema and table names to generate tha table mappings file.| True |
+|TableListFile|Location of the CSV file containing the schema and table names to generate tha table mappings file. The format should be **schema_name;table_name**| True |
 |OutputFolder|Location where the table mappings JSON file will be generated and saved. | True |
 
 ## Illustration
